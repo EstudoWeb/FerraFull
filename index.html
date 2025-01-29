@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FerraFull</title>
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+  <header>
+    <h1>FerraFull</h1>
+    <p>O melhor site de ferramentas para trabalho!</p>
+    <nav>
+      <ul>
+        <li class="links">Home</li>
+        <li class="links">IMC</li>
+        <li class="links">Dollar/Real</li>
+        <li class="links">To-do list</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Ferramentas</h2>
+    <div id="jsTes">
+      <h3>Teste de JavaScript</h3>
+      <p>para ver se o JavaScript da página está funcionando clique no botão abaixo:</p>
+      <button id="TestBut">Clique aqui</button>
+      <div id="jsTesResul">O JavaScript não está ativo, ative-o para usar as ferramentas do site</div>
+    </div>
+    <div id="imcCalc">
+      <h3>Calculador de IMC</h3>
+      <p>Dê suas informações para calcular o IMC</p>
+      <label><input type="number" placeholder="digite seu peso" id="pesoImput"></label>
+      <br>
+      <label><input type="number" placeholder="digite sua altura" id="alturaImput"></label>
+      <button id="calcIMCbut">Calcular</button>
+      <p id="IMCResul"></p>
+    </div>
+    <div id="dollarCalc">
+      <h3>Calculador de dóla em tempo real</h3>
+      <p>digite a quantidade de dolla que você quer converte para real:</p>
+      <label>USD: <input type="number" id="usd" value="0"></label>
+      <br>
+      <button id="trocar">troca</button>
+      <br>
+      <label>BRL: <input type="number" id="real" disabled></label>
+      <button id="calcBut">Calcular</button>
+      <div id="informes">
+        <p id="DataHoraCot"></p>
+        <p id="ValorAtual"></p>
+        <p id="TotalCalc"></p>
+    </div>
+      
+    </div>
+    <div id="calcSimples">
+      <h3>Calculadora simples</h3>
+      <p>seleciona uma operação e calcule</p>
+      <select name="operations" id="operation">
+        <option value="soma">soma(+)</option>
+        <option value="subtracao">subtração(-)</option>
+        <option value="multiplicacao">multiplicação(x)</option>
+        <option value="divisao">divisão(/)</option>
+      </select>
+      <br>
+      <label><input type="number" placeholder="digite um número pra calcular" id="number1"></label>
+      <label><input type="number" placeholder="digite outro número" id="number2"></label>
+      <button id="calcSimplesBut">Calcular</button>
+      <p id="resultadoCalc"></p>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="scrpt.js"></script>
+</body>
+</html>
